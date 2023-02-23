@@ -12,7 +12,7 @@ root = customtkinter.CTk()
 root.geometry("1024x768")
 
 
-def select_image():
+def select_gcode():
     filetypes = (
         ('gcode files', '*.gcode'),
         ('All File', '*.*')
@@ -58,7 +58,7 @@ frame.pack(pady=20, padx=60, fill="both", expand=True)
 label = customtkinter.CTkLabel(master=frame, text="Thumb_Cutter GUI")
 label.pack(pady=12, padx=10)
 
-button0 = customtkinter.CTkButton(master=frame, text="Select .gcode file", command=select_image)
+button0 = customtkinter.CTkButton(master=frame, text="Select .gcode file", command=select_gcode)
 button0.pack(pady=12, padx=10)
 
 canvas = customtkinter.CTkCanvas(master=frame, height=500, width=500)
